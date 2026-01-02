@@ -12,7 +12,7 @@ section {
 
 input, textarea {
     width: 100%;
-    background-color: #242424;
+    background-color: transparent;
     color: white;
     outline: none;
     border: 1px solid #c0c4cc;
@@ -40,6 +40,12 @@ textarea {
 label {
     font-size: 14px;
     font-weight: bold;
+}
+
+.modal--open {
+    z-index: 60;
+    box-shadow: 0 20px 80px 0 rgb(0,0,0,0.55);
+    visibility: visible;
 }
 
 .container {
@@ -272,10 +278,10 @@ MODAL
     width: 90%;
     max-width: 1100px;
     height: 700px;
-    box-shadow: 0 20px 80px 0 rgb(0,0,0,0.55);
     border-radius: 20px;
     overflow: hidden;
     display: flex;
+    visibility: hidden;
 }
 
 .modal__half {
@@ -287,12 +293,7 @@ justify-content: center;
 position: relative;
 }
 
-.modal__about {
-    background-color: rgb(245, 245, 245);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 .modal__contact {
     background-color: #242424;
@@ -390,10 +391,10 @@ transform: scale(1);
     display: flex;
     align-items: center;
     justify-content: center;
-    pinter-events: none;
+    z-index: -1;
 }
 
-.modal__overlay-loading {
+.modal__overlay--loading {
     background-color: #242424;
     font-size: 80px;
     z-index: -1;
@@ -406,6 +407,10 @@ font-weight: bold;
 text-align: center;
 padding: 28px;
 z-index: -1;
+}
+
+.modal__overlay--visible {
+    z-index: 1;
 }
 
 .fa-spinner {
