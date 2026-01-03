@@ -241,6 +241,7 @@ LANDING PAGE
     position: fixed;
     bottom: 32px;
     right: 40px;
+    z-index: 1;
 }
 
 .scroll {
