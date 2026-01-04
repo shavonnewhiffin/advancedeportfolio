@@ -69,6 +69,8 @@ li{
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
+    position: relative;
+    z-index: 1;
 }
 
 p{
@@ -86,6 +88,8 @@ button {
 
 .orange {
     color: #f06449 !important;
+    position: relative;
+    z-index: 1;
 }
 
 .click:hover {
@@ -209,6 +213,8 @@ LANDING PAGE
     font-size: 24px;
     line-height: 2;
     max-width: 500px;
+    position: relative;
+    z-index: 1;
 }
 
 .social__list {
@@ -524,6 +530,8 @@ PROJECTS
     text-align: center;
     font-size: 48px;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
 }
 
 .project:hover .project__img{
